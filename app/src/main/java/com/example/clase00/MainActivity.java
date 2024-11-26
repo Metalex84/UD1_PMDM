@@ -1,7 +1,6 @@
 package com.example.clase00;
 
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -17,15 +16,18 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
-        Button button = findViewById(R.id.button1);
+        Button btn_submit = findViewById(R.id.button1);
         EditText editText1 = findViewById(R.id.editText1);
+        Button btn_clear = findViewById(R.id.button2);
 
-        button.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-                String text = editText1.getText().toString();
-                Toast.makeText(MainActivity.this, text, Toast.LENGTH_SHORT).show();
-            }
+        btn_submit.setOnClickListener(v -> {
+            String text = editText1.getText().toString();
+            Toast.makeText(MainActivity.this, text, Toast.LENGTH_SHORT).show();
+        });
+
+        btn_clear.setOnClickListener(v -> {
+            editText1.setText("");
+            Toast.makeText(MainActivity.this, "Borrando...", Toast.LENGTH_LONG).show();
         });
     }
 }
