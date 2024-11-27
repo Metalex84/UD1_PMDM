@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Clase00</string>
+    <string name="btn_send">Enviar</string>
+    <string name="btn_cancel">Cancelar</string>
+    <string name="lbl_entertext">Enter Text:</string>
+    <string name="hint_entertext">Enter Text Here</string>
 </resources>

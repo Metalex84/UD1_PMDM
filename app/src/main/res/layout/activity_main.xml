@@ -19,7 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10sp"
-            android:text="Enter Text: "
+            android:text="@string/lbl_entertext"
             android:textSize="20sp" />
 
         <EditText
@@ -29,7 +29,7 @@
             android:layout_margin="10sp"
             android:height="48dp"
             android:width="148dp"
-            android:hint="Enter Text Here" />
+            android:hint="@string/hint_entertext" />
 
     </LinearLayout>
 
@@ -43,7 +43,7 @@
             android:id="@+id/button1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Enviar"
+            android:text="@string/btn_send"
             android:gravity="center"/>
 
         <Space
@@ -54,8 +54,23 @@
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Cancelar"
+            android:text="@string/btn_cancel"
             android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/icono"
+            android:src="@mipmap/ic_launcher_round"
+            />
 
     </LinearLayout>
 
